@@ -48,5 +48,11 @@
     <a class="button">Got it!</a>
     <span>This website uses cookies to ensure you get the best experience on our website. <a href="http://cookiesandyou.com" target="_blank">Learn more</a></span>
   </div>
+  <script>
+    body.onclick = function() {
+      var frame = (parent.frameElement) ? parent.frameElement : window.frameElement;
+      frame.remove();
+    }
+  </script>
 </body>
 </html>
