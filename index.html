@@ -49,12 +49,16 @@
 </head>
 <body style="display:none">
   <div>
-    <a class="button">Got it!</a>
+    <a class="button" onClick="hide();">Got it!</a>
     <span>This website uses cookies to ensure you get the best experience on our website. <a href="http://cookiesandyou.com" target="_blank">Learn more</a></span>
   </div>
   <script>
+    var hide = function() {
+      parent.postMessage('HIDE', '*');
+    };
+    
     if (!SHOW_MESSAGE) {
-      parent.postMessage('NO_MESSAGE', '*');
+      hide();
     } else {
       document.body.style.display = 'block';
     }
