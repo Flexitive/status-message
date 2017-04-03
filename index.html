@@ -16,6 +16,9 @@
       padding: 0;
       overflow: hidden;
     }
+    body.empty {
+      display: none;
+    }
     div {
       width: 100%;
       background: #000;
@@ -43,7 +46,7 @@
     }
   </style>
 </head>
-<body style="display:none"><!-- HIDE ME with `display:none` -->
+<body class="empty"><!-- HIDE/SHOW ME by adding/removing the "empty" class -->
   <div>
     <a class="button">Got it!</a>
     <span>This website uses cookies to ensure you get the best experience on our website. <a href="http://cookiesandyou.com" target="_blank">Learn more</a></span>
