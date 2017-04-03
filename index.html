@@ -54,7 +54,7 @@
   </div>
   <script>
     if (!SHOW_MESSAGE) {
-      parent.postMessage('NO_MESSAGE');
+      parent.postMessage('NO_MESSAGE', '*');
     } else {
       document.body.style.display = 'block';
     }
