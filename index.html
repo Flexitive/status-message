@@ -4,6 +4,10 @@
   <meta charset="utf-8">
   <meta name="description" content="Status Notification">
   <meta name="author" content="Neuranet Inc.">
+  <script>
+    // THIS IS HOW YOU CONTROL WHETHER A MESSAGE IS SHOWN OR NOT!!!
+    var SHOW_MESSAGE = true;
+  </script>
   <style>
     html, body {
       user-select: none;
@@ -15,9 +19,6 @@
       margin: 0;
       padding: 0;
       overflow: hidden;
-    }
-    body.empty {
-      display: none;
     }
     div {
       width: 100%;
@@ -46,10 +47,17 @@
     }
   </style>
 </head>
-<body class="empty"><!-- HIDE/SHOW ME by adding/removing the "empty" class -->
+<body style="display:none">
   <div>
     <a class="button">Got it!</a>
     <span>This website uses cookies to ensure you get the best experience on our website. <a href="http://cookiesandyou.com" target="_blank">Learn more</a></span>
   </div>
+  <script>
+    if (!SHOW_MESSAGE) {
+      window.parent.postMessage('NO_MESSAGE');
+    } else {
+      document.body.style.display = 'block';
+    }
+  </script>
 </body>
 </html>
