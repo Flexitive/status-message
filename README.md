@@ -4,4 +4,4 @@ Shows a [system status/notification message](https://neuranet.atlassian.net/brow
 
 ## Setup
 
-Edit what you see inside a `<div>` on [line 51](https://github.com/Flexitive/status-message/blob/master/index.html#L51). Then, decide whether the message should show up or not by toggling the `SHOW_MESSAGE` variable on [https://github.com/Flexitive/status-message/blob/master/index.html#L9](line 9).
+Edit what you see inside a `<div>` on [line 51](https://github.com/Flexitive/status-message/blob/master/index.html#L51). Then, decide whether the message should show up or not by toggling the `SHOW_MESSAGE` variable on [line 9](https://github.com/Flexitive/status-message/blob/master/index.html#L9).
