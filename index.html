@@ -6,7 +6,7 @@
   <meta name="author" content="Neuranet Inc.">
   <script>
     // THIS IS HOW YOU CONTROL WHETHER A MESSAGE IS SHOWN OR NOT!!!
-    var SHOW_MESSAGE = true;
+    var SHOW_MESSAGE = false;
   </script>
   <style>
     html, body {
@@ -56,7 +56,7 @@
     var hide = function() {
       parent.postMessage('HIDE', '*');
     };
-    
+
     if (!SHOW_MESSAGE) {
       hide();
     } else {
